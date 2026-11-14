@@ -1,11 +1,27 @@
-# TP 2 - Búsqueda en Pac-Man
+# Trabajo Práctico 02 — Búsqueda en Pac-Man
 
-**Universidad Argentina de la Empresa - Inteligencia Artificial**  
-Integrantes: [completar]  
-Docente: [completar]  
-Fecha de entrega: [completar]
+**Materia:**
+- Inteligencia Artificial — 2C — 2026
 
-## Introducción y objetivo
+**Profesor:**
+- Parkinson, Christian Anibal
+
+**Equipo 8 — Integrantes:**
+- Massi, Franco — L.U.: 1156946
+- Nari, Agustin Ignacio — L.U.: 1165816
+- Vanore, Miqueas — L.U.: 1179980
+
+*Resultados ejecutados el 21/10/2026. Confirmar fecha de entrega en WebCampus.*
+
+## Índice
+
+1. Introducción y objetivo
+2. Implementación y propiedades
+3. Pruebas y resultados
+4. Conclusiones y alcance
+5. Material consultado y atribución
+
+## 1. Introducción y objetivo
 
 El trabajo aplica cuatro estrategias de búsqueda a la planificación de caminos
 en Pac-Man: DFS, BFS, UCS y A*. El objetivo es obtener una secuencia de acciones
@@ -13,7 +29,7 @@ legales desde una posición inicial hasta la meta y comparar los criterios que
 utiliza cada algoritmo. Se sigue la consigna de Christian Parkinson (2023),
 contrastada con la de Nelson Ponzoni (2021), que pide los mismos algoritmos.
 
-## Implementación y propiedades
+## 2. Implementación y propiedades
 
 Se completaron las cuatro funciones de `pacman/search.py`, conservando las
 interfaces de `SearchProblem`, las estructuras de `util.py`, los agentes y el
@@ -45,7 +61,7 @@ introdujeron abstracciones u optimizaciones adicionales. En el espacio finito
 de posiciones del juego los cuatro algoritmos terminan; esto no implica
 completitud de DFS en espacios infinitos.
 
-## Pruebas y resultados
+## 3. Pruebas y resultados
 
 Validación realizada el **21/10/2026**, con Python **3.13.4** en Windows.
 Antes de completar el código, `tinyMazeSearch` ganó en `tinyMaze` (8 pasos) y
@@ -95,7 +111,7 @@ Se abrió además la interfaz Tk y se inspeccionó visualmente la partida en
 `tinyMaze`: laberinto, Pac-Man, celdas expandidas y puntaje se mostraron
 correctamente. La comprobación visual complementa las aserciones del motor.
 
-## Conclusiones y alcance
+## 4. Conclusiones y alcance
 
 Las implementaciones resuelven los problemas probados respetando los contratos
 del juego. BFS minimiza pasos, UCS minimiza el costo definido por el problema y
@@ -109,7 +125,7 @@ solución; esos casos se distinguen consultando el estado inicial. Se asumen
 estados hashables y no se soportan costos negativos. Los ejercicios de
 esquinas, comida y otros agentes incompletos no forman parte de esta entrega.
 
-## Material consultado y atribución
+## 5. Material consultado y atribución
 
 Se revisaron ambas consignas PDF del ZIP `TP 2 - Búsqueda.zip`, el README y
 `commands.txt` del código docente, `5. Path Finding.pdf` (DFS, BFS, UCS, A* y
