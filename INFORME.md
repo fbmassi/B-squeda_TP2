@@ -99,7 +99,7 @@ También se probaron las funciones de costo de los agentes originales:
 
 | Agente / laberinto | Pasos UCS | Costo UCS | Expandidos UCS | Pasos BFS | Costo BFS |
 |---|---:|---:|---:|---:|---:|
-| StayEast / mediumDottedMaze | 74 | 1.000976583804004 | 186 | 68 | 1.0009825228480622 |
+| StayEast / mediumDottedMaze | 74 | 1.000977 | 186 | 68 | 1.000983 |
 | StayWest / mediumScaryMaze | 92 | 68719479864 | 108 | 72 | 70670371838 |
 
 StayEast usa `0.5 ** x` y StayWest usa `2 ** x` como costo de entrar a una
