@@ -9,7 +9,7 @@ consigna principal la de Christian Parkinson (2023) y se contrastó con la de
 
 - `pacman/`: proyecto original extraído del ZIP, con `search.py` completado.
 - `tests/`: pruebas de algoritmos y de integración con el juego.
-- `INFORME_BORRADOR.md`: base breve para el informe, con resultados medidos.
+- `INFORME.md`: informe del TP con carátula, metodología y resultados medidos.
 - `_materiales_locales/`: carpeta opcional para ZIP, PDFs y apuntes originales;
   no incluida en el repositorio e **ignorada por Git**.
 
