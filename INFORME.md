@@ -11,7 +11,7 @@
 - Nari, Agustin Ignacio — L.U.: 1165816
 - Vanore, Miqueas — L.U.: 1179980
 
-*Resultados ejecutados el 21/10/2026. Confirmar fecha de entrega en WebCampus.*
+*Resultados ejecutados el 21/10/2026. Fecha de entrega: 16/11/2026.*
 
 ## Índice
 
