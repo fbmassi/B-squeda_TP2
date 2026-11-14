@@ -6,5 +6,8 @@ __pycache__/
 .venv/
 venv/
 
+# Materiales de referencia locales
+/_materiales_locales/
+
 # OS
 .DS_Store

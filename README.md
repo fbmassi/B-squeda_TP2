@@ -10,7 +10,8 @@ consigna principal la de Christian Parkinson (2023) y se contrastó con la de
 - `pacman/`: proyecto original extraído del ZIP, con `search.py` completado.
 - `tests/`: pruebas de algoritmos y de integración con el juego.
 - `INFORME_BORRADOR.md`: base breve para el informe, con resultados medidos.
-- `_materiales_locales/`: ZIP, PDFs y apuntes originales, **ignorados por Git**.
+- `_materiales_locales/`: carpeta opcional para ZIP, PDFs y apuntes originales;
+  no incluida en el repositorio e **ignorada por Git**.
 
 ## Requisitos y ejecución
 
@@ -20,7 +21,7 @@ Python para Windows. Los comandos siguientes parten de la raíz del repositorio
 y funcionan en PowerShell. Si corresponde, reemplazar `python` por `py`.
 
 ```powershell
-cd TP2/pacman
+cd pacman
 python pacman.py -l mediumMaze -p SearchAgent -a fn=dfs -q
 python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs -q
 python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs -q
@@ -30,7 +31,7 @@ python pacman.py -l bigMaze -p SearchAgent -a fn=astar,heuristic=manhattanHeuris
 `-q` ejecuta sin ventana y muestra costo, expansiones y resultado. Para ver la
 animación, quitar `-q`; en `bigMaze` puede agregarse `-z 0.5`.
 
-Otros ejemplos de `pacman/commands.txt` dentro del alcance:
+Otros ejemplos de `pacman/commands.txt` dentro del alcance, desde `pacman/`:
 
 ```powershell
 python pacman.py -l tinyMaze -p SearchAgent -a fn=bfs -q
@@ -45,10 +46,10 @@ El puntaje del videojuego y el costo del problema de búsqueda son medidas disti
 
 ## Pruebas automáticas
 
-Desde la raíz del repositorio:
+Desde la raíz del repositorio (si estás en `pacman/`, volvé antes con `cd ..`):
 
 ```powershell
-python -m unittest discover -s TP2/tests -v
+python -m unittest discover -s tests -v
 ```
 
 Son 17 métodos de prueba: 13 sobre grafos y 4 de integración. Las pruebas
