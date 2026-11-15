@@ -9,6 +9,7 @@ consigna principal la de Christian Parkinson (2023) y se contrastó con la de
 
 - `pacman/`: proyecto original extraído del ZIP, con `search.py` completado.
 - `tests/`: pruebas de algoritmos y de integración con el juego.
+- `notebooks/TP2_Busqueda.ipynb`: demostración ejecutable con caminos y métricas reales.
 - `INFORME.md`: informe del TP con carátula, metodología y resultados medidos.
 - `_materiales_locales/`: carpeta opcional para ZIP, PDFs y apuntes originales;
   no incluida en el repositorio e **ignorada por Git**.
@@ -64,6 +65,19 @@ comprueba que UCS logra menor costo que BFS aunque utiliza más pasos.
 
 No se incluyeron `autograder.py` ni `test_cases/` en el ZIP. Sus módulos auxiliares
 originales se conservaron, pero no constituyen una batería ejecutable completa.
+
+## Notebook
+
+Abrir `notebooks/TP2_Busqueda.ipynb` en Jupyter con un kernel Python 3 y ejecutar
+todas las celdas en orden. El notebook reutiliza las funciones de `search.py`,
+juega partidas sin ventana y compara caminos, pasos, costos y expansiones.
+Solo necesita las herramientas habituales de Jupyter; el juego sigue sin
+dependencias externas.
+
+En Google Colab, proporcionar y extraer la carpeta completa del código y situarse
+en su raíz antes de ejecutar (por ejemplo, `%cd TP2_Codigo` para el ZIP de entrega).
+El notebook también admite un kernel iniciado dentro de `notebooks/`. No requiere
+credenciales, servicios externos ni archivos de clase.
 
 ## Decisiones técnicas
 
